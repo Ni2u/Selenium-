@@ -11,8 +11,8 @@ public class Login_automate {
 		System.setProperty("webdriver.chrome.driver", "./software/chromedriver.exe");
 		WebDriver driverobject=new ChromeDriver();
 		driverobject.get("https://www.facebook.com/");
-		driverobject.findElement(By.name("email")).sendKeys("nithuusername");
-		driverobject.findElement(By.id("pass")).sendKeys("nithupassword");;
+		driverobject.findElement(By.name("email")).sendKeys("abcusername");
+		driverobject.findElement(By.id("pass")).sendKeys("abcpassword");;
 		driverobject.findElement(By.id("u_0_h")).click();
 		driverobject.findElement(By.name("login")).click();
 		System.out.println("Current URL is " + driverobject.getCurrentUrl());
