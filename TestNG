@@ -1,0 +1,38 @@
+Open Eclipse
+Click on help--> Click on Install new software
+Click on ADD
+you get a pop-up
+Name: testNG
+Loation:http://dl.bintray.com/testng-team/testng-eclipse-release/7.0.0/
+Click on Add
+
+This should download ans install the TestNG
+To verify whethere its installed, Right click on your project
+you should see "tesNG" there.
+
+How to add testNG library to the project
+Right click on your project-->build path
+add Libraries --> TestNG 
+Click on Finish
+
+alternative method to add testNG library to the porject
+Create a package e.g. testNG
+Create a new Class without main method
+Create a new method in this class
+write the annotation i.e. @Test
+you get an option now to add testNG library to your project
+Then import the import org.testng.annotations.Test
+
+e.g. code
+package testNG;
+
+import org.testng.annotations.Test;
+
+public class Test0 {
+@Test
+public void demo() {
+	
+}
+
+}
+
